@@ -53,7 +53,7 @@ hasdoor(r1_133a, d1_133a).
 hasdoor(r1_133b, d1_133b).
 hasdoor(r1_133c, d1_133c).
 hasdoor(r1_133d, d1_133d).
-hasdoor(r1_133e, d1,133e).
+hasdoor(r1_133e, d1_133e).
 
 hasdoor(r1_h3, d1_110x).
 hasdoor(r1_h2, d1_124).
@@ -68,18 +68,18 @@ hasdoor(r1_129d, d1_133a).
 hasdoor(r1_129d, d1_133b).
 hasdoor(r1_129d, d1_133c).
 hasdoor(r1_129d, d1_133d).
-hasdoor(r1_129d, d1,133e).
+hasdoor(r1_129d, d1_133e).
 
-acc(r1_h1, r1_h2)
-acc(r1_h2, r1_h3)
+acc(r1_h1, r1_h2).
+acc(r1_h2, r1_h3).
 
 
 
 % UNDER THIS IS OLD WILL DELETE
 
 %what is this saying?
-%location(E) :- elevator(E).
-%location(R) :- room(R).
+location(E) :- elevator(E).
+location(R) :- room(R).
 
 
 dooracc(R1,D,R2) :- hasdoor(R1,D), hasdoor(R2,D), R1 != R2, door(D), room(R1),
