@@ -11,7 +11,7 @@
 	}1 :- not noop(I), I=0..n-2.
 
 %removes the warning about noop not being defined, shouldn't have any consequences
-%noop(n).
+noop(n).
 
 %#hide noop/1.
 
